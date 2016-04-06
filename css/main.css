@@ -18,14 +18,15 @@ html {
   box-sizing: inherit;
 }
 
-article h2 {
+.dino h2 {
   font-family: "Denk One", sans-serif;
   margin-top: .75rem;
   margin-bottom: .75rem;
   padding: 0;
+  font-size: 1.5rem;
 }
 
-p {
+.text p {
   margin: 0;
   padding: 0;
 }
@@ -40,34 +41,54 @@ body {
   margin: 0;
 }
 
-article {
+.dino {
   background-color: #e2e2e2;
+  padding-top: 0;
 }
 
 div {
   padding: 1.25rem;
 }
 
-@media only screen and (min-width: 25em) {
-
-
-
-}
-
 @media only screen and (min-width: 38em) {
 
+  .dino {
+    overflow: hidden;
+    position: relative;
+  }
 
+  .text {
+    position: absolute;
+    width: 50%;
+    bottom: 1rem;
+    right: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: .5rem;
+  }
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
 
 }
 
 @media only screen and (min-width: 90em) {
 
-
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
 }
